@@ -1,4 +1,9 @@
 ```lua
+-- methcamper
+['meth'] 					 	 = {['name'] = 'meth', 							['label'] = 'Bag of Meth', 				['weight'] = 100, 		['type'] = 'item', 		['image'] = 'meth.png', 				['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,    	['combinable'] = nil,   ['description'] = 'A baggie of Meth'},
+['portable_methlab'] 			 = {['name'] = 'portable_methlab', 				['label'] = 'Portable Methlab', 		['weight'] = 10000, 	['type'] = 'item', 		['image'] = 'portable_methlab.png', 	['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,    	['combinable'] = nil,   ['description'] = 'All you need to start your own drug empire..'},
+['pseudoephedrine'] 			 = {['name'] = "pseudoephedrine", 				['label'] = "Pseudoephedrine", 			['weight'] = 1000, 		['type'] = "item", 		['image'] = "pseudoephedrine.png", 		['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false,	['combinable'] = nil,   ['description'] = "Pseudoephedrine, also known as Pseudo or Sudo for short, commonly found in anti-allergy medicines."},
+
 local function MobileMeth(vehicle)
     local vehdata = vehicleData(vehicle)
     local currentPos = GetEntityCoords(PlayerPedId())
